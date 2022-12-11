@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from openpyxl import Workbook
 
-InputPath=r'C:\Users\petar\Downloads\20220511_EX_PI180W3W5C2_108_Y_cps6_pcg3_350V_70deg_7l-20deg_inkl_LE.xlsm'
+InputPath=r'' # INSERT INPUT PATH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 #
 df=pd.read_excel(InputPath,sheet_name='Map Data')
 df_new=df.iloc[3:,:]
@@ -83,4 +83,4 @@ rpm_col_sorted=np.append([0],rpm_col_sorted)
 mat=np.vstack((rpm_col_sorted,mat))
 
 df=pd.DataFrame(mat)
-df.to_excel(excel_writer=r"C:\Users\petar\Downloads\20220511_EX_PI180W3W5C2_108_Y_cps6_pcg3_350V_70deg_7l-20deg_inkl_LE-AFTER_SCRIPT.xlsm")
+df.to_excel(excel_writer=r"") # INSERT OUTPUT PATH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
